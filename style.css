@@ -1,0 +1,449 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(255, 255, 255);
+    font-family: sans-serif;
+    color: #333;
+}
+
+/* Header */
+header {
+    width: 100%;
+    height: 100px; /* Hauteur fixe pour la barre de navigation */
+    background-color: #d1c8b9b7; /* Couleur de fond avec transparence */
+    display: flex;
+    justify-content: space-between; /* Espacement entre les éléments */
+    align-items: center;
+    padding: 0 20px; /* Espacement intérieur */
+    position: fixed; /* Rend le header fixe en haut */
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Assure que le header est au-dessus des autres éléments */
+}
+
+.logo-content {
+    display: flex;
+    align-items: center;
+}
+
+.nelumbo {
+    width: 140px;
+    height: auto;
+    display: block; /* Supprime l'espace sous l'image */
+    object-fit: contain;
+    padding-left: 40px;
+    left: 30%;
+}
+
+/* Navigation */
+nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    margin: 0 25px; /* Espacement entre les liens */
+    position: relative;
+}
+
+nav a {
+    color: #336863;
+    text-decoration: none;
+    font-size: 25px;
+    transition: color 0.3s ease;
+    padding-bottom: 5px; /* Espace pour la barre inférieure */
+}
+
+nav a:hover {
+    color: white;
+}
+
+nav a.active {
+    color: white;
+}
+
+nav li::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: white; /* Couleur de la barre au survol */
+    transition: width 0.3s ease;
+}
+
+nav li:hover::after {
+    width: 100%;
+}
+
+/* Social Icons */
+.social-content {
+    display: flex;
+    align-items: center;
+}
+
+.fb-logo, .i-logo {
+    width: 40px;
+    height: auto;
+    margin-left: 15px;
+}
+
+/* Main Content */
+main {
+    padding-top: 100px; /* Pour éviter que le contenu ne soit caché par le header fixe */
+    width: 100%;
+    height: calc(200vh 100px);
+    background: #e4dcdc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+/* Home */
+.lotus {
+    position: relative;
+    width: 100%;
+    height: calc(100vh - 100px); /* Prend toute la hauteur disponible après le header */
+    background-image: url('https://i.postimg.cc/rpPwSDJB/bg.png');
+    background-size: cover;
+    background-position: 100% 60%;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #336863;
+    padding: 20px;
+}
+
+.accroche {
+    font-family: 'Playfair Display', serif;
+    font-size: 2em;
+    margin-bottom: 20px;
+    margin: 40px;
+    margin-left: 40%;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    max-width: 500px;
+    line-height: 2.4;
+    padding: 30px;
+    background-color: #d1c8b9ab;
+    position: absolute;   
+}
+
+address {
+    font-size: 1.2em;
+    font-style: normal;
+    line-height: 1.5;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    position: relative;
+    right: 43%;
+    top: 65%;
+}
+
+.sticker {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 200px;
+    height: auto;
+    bottom: 25%;
+}
+
+/* Weddings page */
+.wedding-content {
+    width: 100%;
+    height: calc(100vh - 100px);
+    background-image: url(https://i.postimg.cc/8zMCV39T/Maquette.png);
+    background-size: cover;
+    background-position: 100% 60%;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    color: #336863;
+    padding: 20px;
+}
+
+.wedding-text {
+    background-color: #d1c8b9c6;
+    font-size: 1.1em;
+    line-height: 1.5.1;
+    margin-bottom: 30px;
+    border: 1px solid #336863;
+    padding: 30px;
+    width: 700px;
+    margin: 50px;
+    margin-top: 10%;
+    margin-right: 40%;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);    
+}
+
+.contact-button {
+    background-color: #336863;
+    color: white;
+    padding: 20px;
+    font-size: large;
+    border: none;
+    position: relative;
+    bottom: 60%;
+    left: 15%;
+}
+
+.contact-button:hover {
+    background-color: #2a524b;
+}
+
+/* About page */
+.about-content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width: 100%;
+    background-image: url(https://i.postimg.cc/DfDvpCXg/Maquette-1.png);
+    height: calc(100vh - 100px);
+    background-size: cover;
+    background-repeat: no-repeat;
+    gap: 20%;
+}
+
+.about-me-title {
+    width: 100%;
+    height: 90px;
+    border: 1px solid #336863;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+    color: #336863;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #d1c8b9c6;
+}
+
+.left-column {
+    flex: 0 0 450px;
+    text-align: center;
+}
+
+.right-column {
+    flex: 0 0 450px;
+    margin-top: 10px;
+    height: fit-content;
+    font-size: 0.77em;
+}
+
+.market-img {
+    width: 100%;
+    height: auto; 
+    display: block;
+    margin-bottom: 10px;
+}
+
+.services-text {
+    height: 90px;
+    border: 1px solid #336863;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.8;
+    padding: 10px;
+    color: #336863;
+    background-color: #d1c8b9c6;
+}
+
+.bio-text {
+    border: 1px solid #336863;
+    padding: 25px;
+    line-height: 1.7;
+    text-align: justify;
+    color: #ffffff;
+    background-color: #336863b0;
+}
+
+.hironobu {
+    width: 50%;
+    height: auto;
+    display: block;
+    float: right;
+}
+
+/* Compositions */
+
+.carousel-container {
+    position: relative; /* Pour positionner les flèches */
+    width: 100%;
+    height: calc(100vh 100px);
+    max-width: 1000px; /* Largeur maximale pour la grille */
+    margin: 0 auto 50px auto; /* Centre le conteneur et ajoute une marge en bas */
+    padding: 20px; /* Espace intérieur */
+    border: 1px solid #ddd; /* Une bordure pour visualiser le conteneur */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.compositions-grid-wrapper {
+    overflow-x: scroll; /* Permet le défilement horizontal */
+    scroll-snap-type: x mandatory; /* Force le défilement à s'arrêter sur les éléments enfants */
+    -webkit-overflow-scrolling: touch; /* Améliore le défilement sur iOS */
+    scrollbar-width: none; /* Cache la scrollbar pour Firefox */
+    -ms-overflow-style: none;  /* Cache la scrollbar pour IE/Edge */
+}
+
+/* Cache la scrollbar pour Webkit (Chrome, Safari) */
+.compositions-grid-wrapper::-webkit-scrollbar {
+    display: none;
+}
+
+.compositions-grid {
+    display: grid;
+    /* 3 colonnes de taille égale, s'adaptant au contenu des images */
+    grid-template-columns: repeat(6, 1fr); /* 6 colonnes (3 par "page" x 2 pages) */
+    gap: 20px; /* Espacement entre les images */
+    padding: 10px; /* Padding interne de la grille */
+    width: max-content; /* S'assure que la grille est plus large que son conteneur pour le défilement */
+}
+
+.compositions-grid img {
+    width: 300px; /* Taille fixe pour les images de la grille */
+    height: 200px; /* Ajustez selon la maquette */
+    object-fit: cover; /* Recadre les images pour qu'elles remplissent l'espace */
+    border: 1px solid #eee;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+    scroll-snap-align: start; /* Les images s'alignent au début du défilement */
+}
+
+.nav-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(51, 104, 99, 0.7);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 1.5em;
+    cursor: pointer;
+    z-index: 10; 
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-arrow:hover {
+    background-color: #336863;
+}
+
+.left-arrow {
+    left: 10px;
+}
+
+.right-arrow {
+    right: 10px;
+}
+
+/* Contact page */
+.contact-page {
+    width: 100%;
+    height: calc(100vh 100px);
+    background-image: url(https://i.postimg.cc/PrKh9LHb/Maquette.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.contact-info {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 20px;
+}
+
+.info-text {
+  max-width: 50%;
+  padding: 20px;
+  font-size: 1.2rem;
+}
+
+.map iframe {
+  width: 400px;
+  height: 200px;
+  border: none;
+}
+
+.form-section {
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  background-color: #336863;
+  padding: 10px;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.contact-form {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 2px;
+}
+
+.contact-form button {
+  background-color: #154c3f;
+  color: white;
+  padding: 12px;
+  font-size: 1.1rem;
+  border: none;
+  cursor: pointer;
+}
+
+img
+/*.form-image {
+  flex: 1;
+  max-width: 400px;
+  text-align: center;
+}
+
+/form-image img {
+  max-width: 100%;
+  height: auto;
+}*/
+
+footer {
+  background-color: #d8d1c4;
+  text-align: center;
+  padding: 15px;
+  font-size: 0.9rem;
+}
+
+footer a {
+  color: inherit;
+  text-decoration: none;
+  margin: 0 5px;
+}
