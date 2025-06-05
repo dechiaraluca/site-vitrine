@@ -357,7 +357,7 @@ address {
 /* Contact page */
 .contact-page {
     width: 100%;
-    height: calc(100vh 100px);
+    height: 100vh;
     background-image: url(https://i.postimg.cc/PrKh9LHb/Maquette.png);
     background-size: cover;
     background-repeat: no-repeat;
@@ -381,9 +381,12 @@ address {
 }
 
 .map iframe {
-  width: 400px;
-  height: 200px;
+  width: 500px;
+  height: 250px;
   border: none;
+  display: flex;
+  padding: 0px;
+  margin-left: 42.4%;
 }
 
 .form-section {
