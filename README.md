@@ -76,5 +76,3 @@ Ce projet met en valeur l’esthétique d’une **boutique de fleurs** à traver
 
 > Merci d’avoir visité ce projet. Que vos journées soient aussi fleuries que ce site 🌸
 ```
-
----

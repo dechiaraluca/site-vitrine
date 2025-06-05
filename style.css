@@ -200,6 +200,7 @@ address {
     position: relative;
     bottom: 60%;
     left: 15%;
+    text-decoration: none;
 }
 
 .contact-button:hover {
@@ -228,7 +229,7 @@ address {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1em;
+    font-size: 1.5em;
     color: #336863;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -357,10 +358,11 @@ address {
 /* Contact page */
 .contact-page {
     width: 100%;
-    height: 100vh;
+    height: auto;
     background-image: url(https://i.postimg.cc/PrKh9LHb/Maquette.png);
     background-size: cover;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -371,17 +373,18 @@ address {
 .contact-info {
     display: flex;
     justify-content: space-between;
+    gap: 80px;
     
 }
 
 .info-text {
     max-width: 50%;
-    padding: 0px;
-    font-size: 1.2rem;
+    font-size: 1.2em;
+    margin-top: 30px;
 }
 
 .map iframe {
-    width: 500px;
+    width: 524px;
     height: 250px;
     border: none;
     display: flex;
@@ -392,7 +395,7 @@ address {
 
 .form-section {
     width: 100%;
-    height: 50vh;
+    height: auto;
     display: flex;
     background-color: #336863;
     padding: 10px;
@@ -404,10 +407,10 @@ address {
 
 .contact-form {
     flex: 1;
-    min-width: 300px;
+    width: 200px;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 5px;
 }
 
 .contact-form input,
@@ -428,27 +431,32 @@ address {
     cursor: pointer;
 }
 
-img
-/*.form-image {
+
+.form-image {
     flex: 1;
-    max-width: 400px;
+    max-width: 300px;
     text-align: center;
 }
 
-/form-image img {
+.form-image img {
     max-width: 100%;
     height: auto;
-}*/
+}
 
 footer {
-    background-color: #d8d1c4;
+    background-color: #00000046;
     text-align: center;
     padding: 15px;
     font-size: 0.9rem;
+    width: 100%;
 }
 
 footer a {
     color: inherit;
     text-decoration: none;
     margin: 0 5px;
+}
+
+html {
+    scroll-behavior: smooth;
 }
