@@ -4,27 +4,26 @@
     box-sizing: border-box;
 }
 
+/* BODY */
 body {
     width: 100%;
     min-height: 100vh;
-    background-color: rgb(255, 255, 255);
+    /* background-color: rgba(255, 255, 255, 0); */
     font-family: sans-serif;
     color: #333;
 }
 
-/* Header */
+/* HEADER */
 header {
     width: 100%;
-    height: 100px; /* Hauteur fixe pour la barre de navigation */
-    background-color: #d1c8b9b7; /* Couleur de fond avec transparence */
+    height: 100px;
+    background-color: #d1c8b9b7;
     display: flex;
     justify-content: space-between; /* Espacement entre les éléments */
     align-items: center;
     padding: 0 20px; /* Espacement intérieur */
     position: fixed; /* Rend le header fixe en haut */
-    top: 0;
-    left: 0;
-    z-index: 1000; /* Assure que le header est au-dessus des autres éléments */
+    z-index: 10;
 }
 
 .logo-content {
@@ -41,7 +40,7 @@ header {
     left: 30%;
 }
 
-/* Navigation */
+/* NAVIGATION */
 nav ul {
     display: flex;
     list-style: none;
@@ -85,7 +84,7 @@ nav li:hover::after {
     width: 100%;
 }
 
-/* Social Icons */
+/* SOCIAL ICONS */
 .social-content {
     display: flex;
     align-items: center;
@@ -97,26 +96,25 @@ nav li:hover::after {
     margin-left: 15px;
 }
 
-/* Main Content */
+/* MAIN CONTENT */
 main {
-    padding-top: 100px; /* Pour éviter que le contenu ne soit caché par le header fixe */
+    padding-top: 100px; /* !!!!!!!!!!!! Pour éviter que le contenu ne soit caché par le header fixe */
     width: 100%;
-    height: calc(200vh 100px);
-    background: #e4dcdc;
+    /* height: calc(100vh - 100px); */
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
 }
 
-/* Home */
+/* HOME */
 .lotus {
     position: relative;
     width: 100%;
     height: calc(100vh - 100px); /* Prend toute la hauteur disponible après le header */
-    background-image: url('https://i.postimg.cc/rpPwSDJB/bg.png');
+    background-image: url(https://i.postimg.cc/rpPwSDJB/bg.png);
     background-size: cover;
-    background-position: 100% 60%;
+    background-position: center center;
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
@@ -125,6 +123,7 @@ main {
     text-align: center;
     color: #336863;
     padding: 20px;
+    margin-top: 0;
 }
 
 .accroche {
@@ -160,7 +159,7 @@ address {
     bottom: 25%;
 }
 
-/* Weddings page */
+/* WEDDINGS PAGE */
 .wedding-content {
     width: 100%;
     height: calc(100vh - 100px);
@@ -207,7 +206,7 @@ address {
     background-color: #2a524b;
 }
 
-/* About page */
+/* ABOUT PAGE */
 .about-content {
     display: flex;
     justify-content: center;
@@ -284,16 +283,14 @@ address {
     float: right;
 }
 
-/* Compositions */
+/* COMPOSITIONS */
 
 .carousel-container {
-    position: relative; /* Pour positionner les flèches */
+    position: relative;
     width: 100%;
     height: calc(100vh 100px);
-    max-width: 1000px; /* Largeur maximale pour la grille */
-    margin: 0 auto 50px auto; /* Centre le conteneur et ajoute une marge en bas */
-    padding: 20px; /* Espace intérieur */
-    border: 1px solid #ddd; /* Une bordure pour visualiser le conteneur */
+    padding: 20px;
+    border: 1px solid #ddd;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
@@ -303,11 +300,6 @@ address {
     -webkit-overflow-scrolling: touch; /* Améliore le défilement sur iOS */
     scrollbar-width: none; /* Cache la scrollbar pour Firefox */
     -ms-overflow-style: none;  /* Cache la scrollbar pour IE/Edge */
-}
-
-/* Cache la scrollbar pour Webkit (Chrome, Safari) */
-.compositions-grid-wrapper::-webkit-scrollbar {
-    display: none;
 }
 
 .compositions-grid {
@@ -355,7 +347,7 @@ address {
     right: 10px;
 }
 
-/* Contact page */
+/* CONTACT PAGE */
 .contact-page {
     width: 100%;
     height: auto;
@@ -373,52 +365,50 @@ address {
 .contact-info {
     display: flex;
     justify-content: space-between;
-    gap: 80px;
-    
+    width: 100%;
+    height: 60%;
+    margin-top: -7.9%;
 }
 
 .info-text {
-    max-width: 50%;
     font-size: 1.2em;
-    margin-top: 30px;
+    width: 70%;
+    padding: 50px;
 }
 
 .map iframe {
-    width: 524px;
-    height: 250px;
+    width: 575px;
+    height: 210px;
     border: none;
     display: flex;
-    padding: 0px;
-    margin-left: 34.4%;
-    margin-bottom: 10%;
 }
 
 .form-section {
     width: 100%;
-    height: auto;
+    height: 225.5px;
     display: flex;
-    background-color: #336863;
-    padding: 10px;
-    gap: 30px;
+    background-color: #336863e7;
+    padding: 3px;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+    gap: 25%;
 }
 
 .contact-form {
-    flex: 1;
-    width: 200px;
+    width: 700px;
+    height: 220px;
     display: flex;
     flex-direction: column;
     gap: 5px;
+    margin-top: -35px;
 }
 
 .contact-form input,
 .contact-form textarea {
-    padding: 10px;
-    font-size: 1rem;
-    border: none;
-    border-radius: 2px;
+    padding: 5px;
+    font-size: 0.8em;
+    border-radius: 1px;
 }
 
 .contact-form button {
@@ -429,32 +419,40 @@ address {
     font-size: 1.1rem;
     border: none;
     cursor: pointer;
+    border: #eee 1px solid;
 }
 
+.contact-form button:hover {
+    background-color: #2a524b;
+}
 
 .form-image {
     flex: 1;
-    max-width: 300px;
-    text-align: center;
+    display: flex;
+    margin-bottom: 2rem;
+    align-items: center;
+    position: relative;
+    right: 120px;
 }
 
 .form-image img {
-    max-width: 100%;
+    width: 87%;
     height: auto;
 }
 
 footer {
     background-color: #00000046;
     text-align: center;
-    padding: 15px;
+    padding: 11px;
     font-size: 0.9rem;
     width: 100%;
+    height: 50px;
 }
 
 footer a {
     color: inherit;
     text-decoration: none;
-    margin: 0 5px;
+    margin: 1 5px;
 }
 
 html {
