@@ -60,10 +60,9 @@ Ce projet met en valeur l’esthétique d’une **boutique de fleurs** à traver
 
 ## ✨ Améliorations futures
 
-- [ ] Transparence navbar
 - [ ] Carrousel déroulant (droite-gauche)
 - [ ] Optimisation SEO (balises meta, titres, description)
-- [ ] Ajout Font floral
+- [ ] Logo Navbar plus grand? 
 
 ---
 
