@@ -98,9 +98,8 @@ nav li:hover::after {
 
 /* MAIN CONTENT */
 main {
-    padding-top: 100px; /* !!!!!!!!!!!! Pour éviter que le contenu ne soit caché par le header fixe */
     width: 100%;
-    /* height: calc(100vh - 100px); */
+    height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -109,12 +108,11 @@ main {
 
 /* HOME */
 .lotus {
-    position: relative;
+    position: absolute;
     width: 100%;
-    height: calc(100vh - 100px); /* Prend toute la hauteur disponible après le header */
+    height: 100%;
     background-image: url(https://i.postimg.cc/rpPwSDJB/bg.png);
     background-size: cover;
-    background-position: center center;
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
@@ -129,8 +127,7 @@ main {
 .accroche {
     font-family: 'Playfair Display', serif;
     font-size: 2em;
-    margin-bottom: 20px;
-    margin: 40px;
+    margin-top: 100px;
     margin-left: 40%;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
     max-width: 500px;
@@ -156,16 +153,16 @@ address {
     justify-content: center;
     width: 200px;
     height: auto;
-    bottom: 25%;
+    bottom: 13%;
+    left: 20px;
 }
 
 /* WEDDINGS PAGE */
 .wedding-content {
     width: 100%;
-    height: calc(100vh - 100px);
+    height: 100%;
     background-image: url(https://i.postimg.cc/8zMCV39T/Maquette.png);
     background-size: cover;
-    background-position: 100% 60%;
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
@@ -174,17 +171,16 @@ address {
     text-align: justify;
     color: #336863;
     padding: 20px;
+    position: absolute;
 }
 
 .wedding-text {
     background-color: #d1c8b9c6;
     font-size: 1.1em;
     line-height: 1.5.1;
-    margin-bottom: 30px;
     border: 1px solid #336863;
     padding: 30px;
     width: 700px;
-    margin: 50px;
     margin-top: 10%;
     margin-right: 40%;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);    
@@ -197,8 +193,8 @@ address {
     font-size: large;
     border: none;
     position: relative;
-    bottom: 60%;
-    left: 15%;
+    bottom: 40%;
+    left: 13%;
     text-decoration: none;
 }
 
@@ -213,11 +209,12 @@ address {
     align-items: flex-start;
     flex-wrap: wrap;
     width: 100%;
+    height: 100%;
     background-image: url(https://i.postimg.cc/DfDvpCXg/Maquette-1.png);
-    height: calc(100vh - 100px);
     background-size: cover;
     background-repeat: no-repeat;
     gap: 20%;
+    position: absolute;
 }
 
 .about-me-title {
@@ -238,6 +235,7 @@ address {
 .left-column {
     flex: 0 0 450px;
     text-align: center;
+    margin-top: 100px;
 }
 
 .right-column {
@@ -245,6 +243,7 @@ address {
     margin-top: 10px;
     height: fit-content;
     font-size: 0.77em;
+    margin-top: 110px;
 }
 
 .market-img {
@@ -286,9 +285,9 @@ address {
 /* COMPOSITIONS */
 
 .carousel-container {
-    position: relative;
+    position: absolute;
     width: 100%;
-    height: calc(100vh 100px);
+    height: 100%;
     padding: 20px;
     border: 1px solid #ddd;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
@@ -309,11 +308,12 @@ address {
     gap: 20px; /* Espacement entre les images */
     padding: 10px; /* Padding interne de la grille */
     width: max-content; /* S'assure que la grille est plus large que son conteneur pour le défilement */
+    margin-top: 10%;
 }
 
 .compositions-grid img {
     width: 300px; /* Taille fixe pour les images de la grille */
-    height: 200px; /* Ajustez selon la maquette */
+    height: 300px; /* Ajustez selon la maquette */
     object-fit: cover; /* Recadre les images pour qu'elles remplissent l'espace */
     border: 1px solid #eee;
     box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
@@ -350,7 +350,7 @@ address {
 /* CONTACT PAGE */
 .contact-page {
     width: 100%;
-    height: auto;
+    height: 100%;
     background-image: url(https://i.postimg.cc/PrKh9LHb/Maquette.png);
     background-size: cover;
     background-repeat: no-repeat;
@@ -360,6 +360,7 @@ address {
     justify-content: center;
     align-items: center;
     text-align: center;
+    position: absolute;
 }
 
 .contact-info {
@@ -367,13 +368,13 @@ address {
     justify-content: space-between;
     width: 100%;
     height: 60%;
-    margin-top: -7.9%;
 }
 
 .info-text {
     font-size: 1.2em;
     width: 70%;
     padding: 50px;
+    margin-top: 70px;
 }
 
 .map iframe {
@@ -381,6 +382,7 @@ address {
     height: 210px;
     border: none;
     display: flex;
+    margin-top: 100px;
 }
 
 .form-section {
