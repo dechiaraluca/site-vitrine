@@ -7,12 +7,12 @@ Ce projet met en valeur l’esthétique d’une **boutique de fleurs** à traver
 
 ## 🌷 Aperçu du site
 
-> Un site vitrine responsive pensé pour une fleuriste :  
+> Un site vitrine responsive pensé pour un fleuriste :  
 > **élégant, doux et accueillant**, à l’image d’un atelier floral artisanal.
 
 🔗 [Voir le site en ligne](https://github.com/dechiaraluca/site-vitrine)
 📱 Compatible mobile, tablette et ordinateur  
-🎨 Design inspiré de la nature (palette pastel, typographies douces)
+🎨 Design inspiré de la nature (lotus, typographies douces)
 
 ---
 
@@ -62,7 +62,6 @@ Ce projet met en valeur l’esthétique d’une **boutique de fleurs** à traver
 
 - [ ] Carrousel déroulant (droite-gauche)
 - [ ] Optimisation SEO (balises meta, titres, description)
-- [ ] Logo Navbar plus grand? 
 
 ---
 

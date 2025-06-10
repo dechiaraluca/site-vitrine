@@ -8,7 +8,6 @@
 body {
     width: 100%;
     min-height: 100vh;
-    /* background-color: rgba(255, 255, 255, 0); */
     font-family: sans-serif;
     color: #333;
 }
@@ -24,6 +23,7 @@ header {
     padding: 0 20px; /* Espacement intérieur */
     position: fixed; /* Rend le header fixe en haut */
     z-index: 10;
+    overflow: hidden;
 }
 
 .logo-content {
@@ -32,8 +32,7 @@ header {
 }
 
 .nelumbo {
-    width: 140px;
-    height: auto;
+    width: 180px;
     display: block; /* Supprime l'espace sous l'image */
     object-fit: contain;
     padding-left: 40px;
