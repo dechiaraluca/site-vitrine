@@ -129,11 +129,18 @@ main {
     margin-top: 100px;
     margin-left: 40%;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-    max-width: 500px;
-    line-height: 2.4;
+    width: 500px;
+    height: 250px;
+    line-height: 2.8;
     padding: 30px;
     background-color: #d1c8b9ab;
-    position: absolute;   
+}
+
+.sticker {
+    z-index: 10;
+    position: absolute;
+    bottom: 250px;
+    right: 530px;
 }
 
 address {
@@ -141,19 +148,9 @@ address {
     font-style: normal;
     line-height: 1.5;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
-    position: relative;
-    right: 43%;
-    top: 65%;
-}
-
-.sticker {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    width: 200px;
-    height: auto;
-    bottom: 13%;
-    left: 20px;
+    position: absolute;
+    top: 90%;
+    right: 85%;
 }
 
 /* WEDDINGS PAGE */
